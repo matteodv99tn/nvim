@@ -20,3 +20,20 @@ map("n", "<A-0>", "<Cmd>BufferLast<CR>", opts)
 
 map("n", "<A-p>", "<Cmd>BufferPin<CR>", opts)
 map("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
+
+vim.g.barbar_auto_setup = false
+require("barbar").setup {
+    animation = true,
+    auto_hide = true,
+    tabpages = true,
+    highlight_visible = true,
+    highlight_alternate = false,
+
+    icons = {
+        buffer_index = true,
+        buffer_number = false,
+        button = '❌',
+
+        alternate = {filetype = {enable = false}}
+    }
+}
