@@ -52,11 +52,12 @@ return require('packer').startup(function(use)
 
             -- Snippets
             {'L3MON4D3/LuaSnip'},             -- Required
-            {'rafamadriz/friendly-snippets'}, -- Optional
+            -- {'rafamadriz/friendly-snippets'}, -- Optional
         }
     }
     
     use { "catppuccin/nvim", as = "catppuccin" }
+    use { "catppuccin/vim" }
 
     use("lervag/vimtex")
     use({
@@ -71,6 +72,8 @@ return require('packer').startup(function(use)
 
     -- Copilot
     use("github/copilot.vim")
+
+    use({ "pavanbhat1999/figlet.nvim", requires = "numToStr/Comment.nvim"})
 end)
 
 

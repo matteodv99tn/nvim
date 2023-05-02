@@ -5,3 +5,5 @@ let maplocalleader = ' '
 set cc = 
 
 Copilot disable
+
+inoremap <C-i> \textit
