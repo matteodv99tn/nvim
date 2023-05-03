@@ -73,6 +73,8 @@ return require('packer').startup(function(use)
     -- Copilot
     use("github/copilot.vim")
 
+
+    use{'kkoomen/vim-doge', run = ':call doge#install()'}
     use({ "pavanbhat1999/figlet.nvim", requires = "numToStr/Comment.nvim"})
 end)
 
