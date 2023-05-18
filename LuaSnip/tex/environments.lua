@@ -74,4 +74,20 @@ return {
     ), {
         condition = line_begin
     }),
+
+    s({
+        trig = "FIG",
+        snippetType = "autosnippet" 
+    }, fmta( [[ 
+        \begin{figure}[bt]
+            \centering
+            \includegraphics[width=<>cm]{<>}
+            \caption{<>}
+            \label{fig:<>}
+        \end{figure}
+        ]],
+        {i(2, "5"), i(1, "filename.ext"), i(3, "caption"), i(4, "label")}
+    ), {
+        condition = line_begin
+    }),
 }

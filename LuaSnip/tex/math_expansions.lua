@@ -22,7 +22,7 @@ return {
         wordTrig = false,
         snippetType = "autosnippet"
     }, fmta(
-        "^{<>} ",
+        "^{<>}",
         {i(1, "superscript")}
     ), {
         condition = in_mathzone
@@ -33,7 +33,7 @@ return {
         wordTrig = false,
         snippetType = "autosnippet"
     }, fmta(
-        "_{<>} ",
+        "_{<>}",
         {i(1, "subscript")}
     ), {
         condition = in_mathzone
