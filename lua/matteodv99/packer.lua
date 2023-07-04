@@ -55,7 +55,7 @@ return require('packer').startup(function(use)
             -- {'rafamadriz/friendly-snippets'}, -- Optional
         }
     }
-    
+
     use { "catppuccin/nvim", as = "catppuccin" }
     use { "catppuccin/vim" }
 
@@ -76,6 +76,8 @@ return require('packer').startup(function(use)
 
     use{'kkoomen/vim-doge', run = ':call doge#install()'}
     use({ "pavanbhat1999/figlet.nvim", requires = "numToStr/Comment.nvim"})
+
+    use("ilyachur/cmake4vim")
 end)
 
 
