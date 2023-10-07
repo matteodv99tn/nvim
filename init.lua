@@ -1,5 +1,5 @@
 require("matteodv99")
-require("figlet").Config({font="standard"})
+-- require("figlet").Config({font="standard"})
 vim.g.python3_host_prog = "/usr/bin/python3.8"
 
 
