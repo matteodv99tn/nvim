@@ -17,32 +17,32 @@ end
 return {
 
     ---- Simple expansions
-    s({ 
-        trig = "^",
-        wordTrig = false,
-        snippetType = "autosnippet"
-    }, fmta(
-        "^{<>}",
-        {i(1, "superscript")}
-    ), {
-        condition = in_mathzone
-    }),
+    -- s({
+    --     trig = "^",
+    --     wordTrig = false,
+    --     snippetType = "autosnippet"
+    -- }, fmta(
+    --     "^{<>}",
+    --     {i(1, "superscript")}
+    -- ), {
+    --     condition = in_mathzone
+    -- }),
 
-    s({ 
-        trig = "_",
-        wordTrig = false,
-        snippetType = "autosnippet"
-    }, fmta(
-        "_{<>}",
-        {i(1, "subscript")}
-    ), {
-        condition = in_mathzone
-    }),
+    -- s({
+    --     trig = "_",
+    --     wordTrig = false,
+    --     snippetType = "autosnippet"
+    -- }, fmta(
+    --     "_{<>}",
+    --     {i(1, "subscript")}
+    -- ), {
+    --     condition = in_mathzone
+    -- }),
 
     ---- Command triggers
     s({
         trig = "ff",
-        snippetType = "autosnippet" 
+        snippetType = "autosnippet"
     }, fmta(
         "\\frac{<>}{<>} ",
         {i(1, "numerator"), i(2, "denominator")}
@@ -52,8 +52,8 @@ return {
 
 
     s({
-        trig = "Sum", 
-        snippetType = "autosnippet" 
+        trig = "Sum",
+        snippetType = "autosnippet"
     }, fmta(
         "\\sum_{<>}^{<>} ",
         {i(1, "from"), i(2, "to")}
@@ -63,10 +63,10 @@ return {
 
 
 
-    ---- Matrix/Vector expansions 
-    s({ 
+    ---- Matrix/Vector expansions
+    s({
         trig = "MAT",
-        snippetType = "autosnippet" 
+        snippetType = "autosnippet"
     }, fmta(
         "\\begin{bmatrix} \n\t<> \n\\end{bmatrix} ",
         {i(1, "*matrix*")}
@@ -74,9 +74,9 @@ return {
         condition = in_mathzone
     }),
 
-    s({ 
+    s({
         trig = "VEC",
-        snippetType = "autosnippet" 
+        snippetType = "autosnippet"
     }, fmta(
         "\\begin{pmatrix} \n\t<> \n\\end{pmatrix} ",
         {i(1, "*vector*")}
@@ -85,11 +85,11 @@ return {
     }),
 
 
-    ---- Variable indexing 
+    ---- Variable indexing
     s({
         trig = "ii ",
         wordTrig = false,
-        snippetType = "autosnippet" 
+        snippetType = "autosnippet"
     }, {
         t("_{i} ")
     }, {
@@ -99,7 +99,7 @@ return {
     s({
         trig = "jj ",
         wordTrig = false,
-        snippetType = "autosnippet" 
+        snippetType = "autosnippet"
     }, {
         t("_{j} ")
     }, {
@@ -109,7 +109,7 @@ return {
     s({
         trig = "kk ",
         wordTrig = false,
-        snippetType = "autosnippet" 
+        snippetType = "autosnippet"
     }, {
         t("_{k} ")
     }, {

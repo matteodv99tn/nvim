@@ -45,16 +45,16 @@ return {
         i(0)
     })),
 
-    s({
-        trig = "_",
-        wordTrig = false,
-        snippetType = "autosnippet"
-    }, fmta([[
-        \_
-        ]], {}),
-    {
-        condition = not_in_mathzone
-    }),
+    -- s({
+    --     trig = "_",
+    --     wordTrig = false,
+    --     snippetType = "autosnippet"
+    -- }, fmta([[
+    --     \_
+    --     ]], {}),
+    -- {
+    --     condition = not_in_mathzone
+    -- }),
 
 
     s({

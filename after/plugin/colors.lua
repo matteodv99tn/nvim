@@ -103,6 +103,6 @@ require("catppuccin").setup({
 vim.opt.bg=dark
 vim.cmd.colorscheme "catppuccin"
 
-vim.opt.bg=light
-vim.cmd("colorscheme rose-pine")
-vim.cmd.colorscheme "rose-pine"
+-- vim.opt.bg=light
+-- vim.cmd("colorscheme rose-pine")
+-- vim.cmd.colorscheme "rose-pine"
