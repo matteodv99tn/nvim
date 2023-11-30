@@ -7,7 +7,7 @@ let g:vimtex_quickfix_ignore_filters = [
             \]
 
 let maplocalleader = ' '
-set cc = 
+set cc =
 
 Copilot disable
 

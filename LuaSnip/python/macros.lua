@@ -21,7 +21,7 @@ return {
         ]],
         {i(0, "pass")}
     ),{
-        condition = line_begin 
+        condition = line_begin
     }),
 
     s({
@@ -29,7 +29,7 @@ return {
         snippetType = "autosnippet"
     }, fmta(
         [[
-        def main(): 
+        def main():
             <>
 
 
@@ -38,7 +38,7 @@ return {
         ]],
         {i(0, "pass")}
     ),{
-        condition = line_begin 
+        condition = line_begin
     }),
 
 
@@ -47,16 +47,16 @@ return {
         snippetType = "autosnippet"
     }, fmta(
         [[
-        class <>(<>): 
+        class <>(<>):
             """ <> class """
-            
 
-            def __init__(self): 
-                """ <> constructor """<> 
-                pass 
+
+            def __init__(self):
+                """ <> constructor """<>
+                pass
         ]],
         {i(1, "classname"), i(2, "parentclass"), rep(1), rep(1), i(0)}
     ),{
-        condition = line_begin 
+        condition = line_begin
     }),
 }

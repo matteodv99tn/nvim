@@ -62,5 +62,23 @@ return {
     ), {
         condition = line_begin
     }),
+
+    s({
+        trig = "GUARDS",
+        wordTrig = false,
+        snippetType = "autosnippet"
+    }, fmta([[
+        #ifndef <>_<>_HPP__
+        #define <>_<>_HPP__
+
+        <>
+
+
+        #endif  // <>_<>_HPP__
+        ]],
+        {i(1, "project"), i(2, "file"), rep(1), rep(2), i(0, "body"), rep(1), rep(2)}
+    ), {
+        condition = line_begin
+    }),
 }
 
