@@ -57,7 +57,7 @@
 -- vim.cmd('colorscheme rose-pine')
 
 require("catppuccin").setup({
-    flavour = "frappe", -- latte, frappe, macchiato, mocha
+    flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = { -- :h background
         light = "latte",
         dark = "mocha",
@@ -101,8 +101,8 @@ require("catppuccin").setup({
 
 -- setup must be called before loading
 vim.opt.bg=dark
+-- vim.opt.bg=light
 vim.cmd.colorscheme "catppuccin"
 
--- vim.opt.bg=light
 -- vim.cmd("colorscheme rose-pine")
 -- vim.cmd.colorscheme "rose-pine"

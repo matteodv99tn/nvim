@@ -1,6 +1,8 @@
+-- Set relative numbering
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+-- Set tab behavior
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4

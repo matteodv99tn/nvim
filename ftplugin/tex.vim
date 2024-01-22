@@ -1,5 +1,6 @@
 filetype plugin indent on
 let g:vimtex_view_method = 'zathura'
+let g:Tex_BibtexFlavor = 'biber'
 
 let g:vimtex_quickfix_ignore_filters = [
             \ 'Underfull',
