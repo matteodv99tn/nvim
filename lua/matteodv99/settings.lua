@@ -14,3 +14,7 @@ vim.opt.wrap = true
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "88"
 vim.opt.scrolloff = 8
+
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
+
+-- require("figlet").config({font="small"})
