@@ -4,6 +4,22 @@
 -- :PackerSync
 
 
+function WaitForPackerSync()
+    local timeout = 5000  -- Maximum timeout in milliseconds
+    local start_time = vim.loop.hrtime()
+
+    -- Keep checking the status of Packer until it's done or timeout occurs
+    while vim.fn.exists(":PackerStatus") == 2 do
+        -- Check if timeout has occurred
+        if (vim.loop.hrtime() - start_time) / 1000000 > timeout then
+            print("PackerSync timed out")
+            return
+        end
+        vim.cmd("sleep 100ms")
+    end
+    print("PackerSync completed")
+end
+
 -- Installs packer if it is not already installed
 local ensure_packer = function()
   local fn = vim.fn
@@ -150,6 +166,8 @@ return require("packer").startup(function(use)
 
     -- Cmake
     use({"ilyachur/cmake4vim"})
+
+    use({"jamestthompson3/nvim-remote-containers"})
 
 
     --  __  __ _
