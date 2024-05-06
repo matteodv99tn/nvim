@@ -17,12 +17,12 @@ require("mason").setup({})
 require("mason-lspconfig").setup({
     ensure_installed = {
         "clangd",
-        "cmake",
+        -- "cmake",
         "pyright",
         "yamlls",
-        "lemminx",
-        "taplo",
-        "rust_analyzer"
+        -- "lemminx",
+        -- "taplo",
+        -- "rust_analyzer"
     },
     handlers = {
         lsp_zero.default_setup,
