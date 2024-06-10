@@ -68,13 +68,13 @@ return {
         wordTrig = false,
         snippetType = "autosnippet"
     }, fmta([[
-        #ifndef <>_<>_HPP__
-        #define <>_<>_HPP__
+        #ifndef <>_<>_HPP
+        #define <>_<>_HPP
 
         <>
 
 
-        #endif  // <>_<>_HPP__
+        #endif  // <>_<>_HPP
         ]],
         {i(1, "project"), i(2, "file"), rep(1), rep(2), i(0, "body"), rep(1), rep(2)}
     ), {

@@ -20,6 +20,7 @@ require("mason-lspconfig").setup({
         -- "cmake",
         "pyright",
         "yamlls",
+        "jedi-language-server",
         -- "lemminx",
         -- "taplo",
         -- "rust_analyzer"

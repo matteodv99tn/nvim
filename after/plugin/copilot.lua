@@ -12,3 +12,4 @@ vim.keymap.set("i", "<A-l>", "copilot#Accept('<CR>')", {silent = true, expr = tr
 vim.keymap.set("i", "<A-j>", "copilot#Next()", {silent = true, expr = true, replace_keycodes = false})
 vim.keymap.set("i", "<A-k>", "copilot#Previous()", {silent = true, expr = true, replace_keycodes = false})
 
+vim.cmd("Copilot disable")
