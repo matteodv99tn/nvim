@@ -18,7 +18,8 @@ require("mason-lspconfig").setup({
     ensure_installed = {
         "clangd",
         -- "cmake",
-        "pyright",
+        -- "pyright",
+        "jedi_language_server",
         "yamlls",
         -- "lemminx",
         -- "taplo",
