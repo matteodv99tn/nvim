@@ -5,6 +5,7 @@ let g:Tex_BibtexFlavor = 'biblatex'
 let g:vimtex_quickfix_ignore_filters = [
             \ 'Underfull',
             \ 'Overfull',
+            \ 'XeLaTeX',
             \]
 
 let maplocalleader = ' '
