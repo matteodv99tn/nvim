@@ -19,7 +19,7 @@ require("mason-lspconfig").setup({
         "clangd",
         -- "cmake",
         -- "pyright",
-        "jedi_language_server",
+        --  "jedi_language_server",
         "yamlls",
         -- "lemminx",
         -- "taplo",

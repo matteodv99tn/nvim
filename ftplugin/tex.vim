@@ -6,6 +6,7 @@ let g:vimtex_quickfix_ignore_filters = [
             \ 'Underfull',
             \ 'Overfull',
             \ 'XeLaTeX',
+            \ 'lipsum',
             \]
 
 let maplocalleader = ' '

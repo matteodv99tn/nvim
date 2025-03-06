@@ -81,6 +81,8 @@ return require("packer").startup(function(use)
     })
 
     use({"github/copilot.vim"})
+    use({"robitx/gp.nvim"})
+    use({"folke/which-key.nvim"})
     use({"mbbill/undotree"})
     use({"theprimeagen/harpoon"})
     use({"tpope/vim-fugitive"})
